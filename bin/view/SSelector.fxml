@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ * Name:		Liam Davies,		Kevin Lee
+ * netid:		lmd312,				kjl156
+-->
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="599.0" maxWidth="610.0" minHeight="520.0" minWidth="514.0" prefHeight="599.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SSelectorController">
+   <children>
+      <ListView fx:id="listOfPossible" layoutX="14.0" layoutY="90.0" onMouseClicked="#handleMousePossible" prefHeight="391.0" prefWidth="218.0" />
+      <Text layoutX="208.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search" textAlignment="CENTER" wrappingWidth="183.52734375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By Date: ">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text layoutX="223.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <ListView fx:id="listOfSearch" layoutX="368.0" layoutY="90.0" onMouseClicked="#handleMouseSearch" prefHeight="391.0" prefWidth="218.0" />
+      <Button fx:id="dateButton" layoutX="469.0" layoutY="47.0" mnemonicParsing="false" onAction="#searchDate" prefHeight="27.0" prefWidth="109.0" text="Search Date" />
+      <Button fx:id="RightButton" layoutX="280.0" layoutY="227.0" mnemonicParsing="false" onAction="#moveRight" text="--&gt;" />
+      <Button fx:id="LeftButton" layoutX="281.0" layoutY="306.0" mnemonicParsing="false" onAction="#moveLeft" text="&lt;--" />
+      <Button fx:id="tagButton" layoutX="245.0" layoutY="398.0" mnemonicParsing="false" onAction="#searchTag" prefHeight="27.0" prefWidth="109.0" text="Search Tag" />
+      <Button fx:id="returnToDashboard" layoutX="37.0" layoutY="557.0" mnemonicParsing="false" onAction="#returnToDashboard" prefHeight="28.0" prefWidth="172.0" text="Return To Dashboard" />
+      <DatePicker fx:id="fromDate" layoutX="14.0" layoutY="47.0" />
+      <DatePicker fx:id="toDate" layoutX="257.0" layoutY="47.0" />
+   </children>
+</AnchorPane>

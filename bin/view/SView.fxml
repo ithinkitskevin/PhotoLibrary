@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ * Name:		Liam Davies,		Kevin Lee
+ * netid:		lmd312,				kjl156
+-->
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="599.0" maxWidth="610.0" minHeight="520.0" minWidth="514.0" prefHeight="599.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SViewController">
+   <children>
+      <ListView fx:id="ListOfPhotos" layoutX="14.0" layoutY="36.0" onMouseClicked="#handleMouseClick" prefHeight="431.0" prefWidth="326.0" />
+      <Text layoutX="208.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Results" wrappingWidth="183.52734375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="RetToDashboard" layoutX="18.0" layoutY="549.0" mnemonicParsing="false" onAction="#retToDashboard" prefHeight="27.0" prefWidth="135.0" text="Return to Dashboard" />
+      <Button fx:id="Create" layoutX="369.0" layoutY="514.0" mnemonicParsing="false" onAction="#createAlbum" prefHeight="27.0" prefWidth="68.0" text="Create" />
+      <Button fx:id="View" layoutX="51.0" layoutY="480.0" mnemonicParsing="false" onAction="#viewPhoto" prefHeight="27.0" prefWidth="64.0" text="View" />
+      <TextField fx:id="AlbumText" layoutX="162.0" layoutY="514.0" prefHeight="27.0" prefWidth="194.0" promptText="Album Name" />
+      <Text layoutX="18.0" layoutY="535.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Album:">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <ImageView fx:id="Thumbnail" fitHeight="197.0" fitWidth="247.0" layoutX="346.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="PhotoTitle" layoutX="346.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thumbnail" textAlignment="CENTER" wrappingWidth="247.0" />
+      <Text fx:id="OldTime" layoutX="354.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Modified Time:" />
+      <Text fx:id="NumOfPhotos" layoutX="354.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Photos: " />
+   </children>
+</AnchorPane>

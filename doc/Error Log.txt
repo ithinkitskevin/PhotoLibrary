@@ -1,0 +1,5 @@
+- Renaming to an existing title- FIXED
+- Admin login gives Error message - FIXED
+- Can enter backwards dates - FIXED
+- Picture says fle path, means date
+- File path entry does nothing

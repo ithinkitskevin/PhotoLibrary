@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ * Name:		Liam Davies,		Kevin Lee
+ * netid:		lmd312,				kjl156
+-->
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="599.0" maxWidth="610.0" minHeight="520.0" minWidth="514.0" prefHeight="599.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AlbumController">
+   <children>
+      <ListView fx:id="listOfPhotos" layoutX="14.0" layoutY="36.0" onMouseClicked="#handleMouseClick" prefHeight="431.0" prefWidth="326.0" />
+      <Text fx:id="title" layoutX="68.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="463.52734375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="delete" layoutX="14.0" layoutY="478.0" mnemonicParsing="false" onAction="#deletePhoto" text="Delete" />
+      <Button fx:id="retToDashboard" layoutX="15.0" layoutY="558.0" mnemonicParsing="false" onAction="#retToDashboard" prefHeight="27.0" prefWidth="167.0" text="Return to Dashboard" />
+      <Button fx:id="add" layoutX="187.0" layoutY="522.0" mnemonicParsing="false" onAction="#addPhoto" prefHeight="27.0" prefWidth="68.0" text="Add" />
+      <Button fx:id="view" layoutX="134.0" layoutY="478.0" mnemonicParsing="false" onAction="#viewPhoto" text="View" />
+      <TextField fx:id="caption" layoutX="14.0" layoutY="522.0" promptText="New Photo" />
+      <Text layoutX="342.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="File Path:" />
+      <Text layoutX="14.0" layoutY="518.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Caption:" />
+      <ImageView fx:id="thumbnail" fitHeight="197.0" fitWidth="247.0" layoutX="346.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="photoTitle" layoutX="437.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thumbnail" textAlignment="CENTER" />
+      <Text fx:id="oldTime" layoutX="342.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Modified Time:" />
+      <Text fx:id="numOfPhotos" layoutX="342.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Photos: " />
+      <Text fx:id="filePath" layoutX="342.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Not Applicable" wrappingWidth="255.60546875" />
+   </children>
+</AnchorPane>

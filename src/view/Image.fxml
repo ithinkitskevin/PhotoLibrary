@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ * Name:		Liam Davies,		Kevin Lee
+ * netid:		lmd312,				kjl156
+-->
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="599.0" maxWidth="643.0" minHeight="520.0" minWidth="514.0" prefHeight="595.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ImageController">
+   <children>
+      <ListView fx:id="listOfTags" layoutX="411.0" layoutY="84.0" prefHeight="334.0" prefWidth="227.0" />
+      <Text layoutX="230.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Image View" textAlignment="CENTER" wrappingWidth="183.52734375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="Delete" layoutX="411.0" layoutY="424.0" mnemonicParsing="false" onAction="#deleteTag" text="Delete" />
+      <Button fx:id="retToAlbum" layoutX="416.0" layoutY="551.0" mnemonicParsing="false" onAction="#retToAlbum" prefHeight="27.0" prefWidth="220.0" text="Return to Album">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <TextField fx:id="Caption" layoutX="15.0" layoutY="505.0" prefHeight="27.0" prefWidth="291.0" />
+      <Button fx:id="Add" layoutX="411.0" layoutY="484.0" mnemonicParsing="false" onAction="#addTag" prefHeight="27.0" prefWidth="58.0" text="Add" />
+      <TextField fx:id="Type" layoutX="411.0" layoutY="453.0" prefHeight="27.0" prefWidth="110.0" promptText="Type" />
+      <Text fontSmoothingType="LCD" layoutX="14.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date/Time:" />
+      <Text fx:id="Time" layoutX="85.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Default Time" />
+      <ImageView fx:id="Image" fitHeight="400.0" fitWidth="399.0" layoutX="6.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="Value" layoutX="524.0" layoutY="453.0" prefHeight="27.0" prefWidth="117.0" promptText="Value" />
+      <Text fontSmoothingType="LCD" layoutX="14.0" layoutY="502.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Caption:" />
+      <Button fx:id="EditCaption" layoutX="312.0" layoutY="505.0" mnemonicParsing="false" onAction="#editCaption" text="Edit Caption" />
+      <Button fx:id="Move" layoutX="313.0" layoutY="555.0" mnemonicParsing="false" onAction="#move" text="Move Photo" />
+      <Button fx:id="Copy" layoutX="216.0" layoutY="555.0" mnemonicParsing="false" onAction="#copy" text="Copy Photo" />
+      <Text layoutX="411.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tags:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Button fx:id="Prev" layoutX="9.0" layoutY="9.0" mnemonicParsing="false" onAction="#prevPhoto" text="Prev" />
+      <Button fx:id="Next" layoutX="591.0" layoutY="7.0" mnemonicParsing="false" onAction="#nextPhoto" text="Next" />
+      <ComboBox fx:id="AlbumBox" layoutX="29.0" layoutY="555.0" prefHeight="27.0" prefWidth="161.0" promptText="Album Destination" />
+   </children>
+</AnchorPane>
